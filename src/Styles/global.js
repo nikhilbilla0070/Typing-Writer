@@ -66,4 +66,53 @@ export const GlobalStyles = createGlobalStyle`
     .skipped{
         color: grey;
     }
+    .upper-menu{
+        display: flex;
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-between;
+        font-size: 1.4rem;
+        padding: 0.5rem;
+    }
+    .modes{
+        display: flex;
+        gap: 5px;
+    }
+    .time-modes: hover{
+        color: green;
+        cursor: pointer;
+    }
+    .stats-box{
+        display: flex;
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .left{
+        width: 30%;
+        padding: 30px;
+    }
+    .right{
+        width: 70%;
+    }
+    .title{
+        font-size: 22px;
+    }
+    .subtitle{
+        font-size: 30px;
+        color: gold;
+    }
+    .restart{
+        font-size: 40px;
+        margin-top: 5px;
+        cursor: pointer;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 `;
