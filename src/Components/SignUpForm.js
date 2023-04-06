@@ -2,7 +2,7 @@ import { Box, Button, TextField } from "@mui/material";
 import React, { useState } from "react";
 import { toast } from "react-toastify";
 import { auth } from "../firebaseConfig";
-const SignupForm = () => {
+const SignupForm = ({handleClose}) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
@@ -46,6 +46,7 @@ const SignupForm = () => {
                 progress: undefined,
                 theme: "dark",
                 });
+            handleClose();
         }).catch((err)=>{
             toast.error('Not able to create user', {
                 position: "top-right",
